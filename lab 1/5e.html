@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("enter the number");
+        let number = original = n;
+        let count, sum = 0;
+
+        while (n != 0) {
+            n = Math.floor(n / 10);
+            count++;
+        }
+
+        for (i = 0; i < n; i++) {
+            rev = number % 10;
+            sum = sum*10 + rev;
+        }
+
+        if (sum == original) {
+            document.writeln("n is palindrome");
+        }
+        else {
+            document.writeln("n is palindrome");
+        }
+    </script>
+</body>
+</html>

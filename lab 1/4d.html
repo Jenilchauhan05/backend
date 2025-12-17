@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("enter the number");
+        let a = 0, b = 1;
+
+        if (n == 1) {
+            document.writeln("0");
+        }
+        else if (n == 2) {
+            document.writeln("0 1");
+        }
+        else if (n > 2) {
+            document.writeln("0" + "1"); 
+            for (i = 1; i <= n; i++) {
+            let m = a + b;
+            a = b;
+            b = m;
+            document.writeln(m);
+            }
+        }
+    </script>
+</body>
+</html>

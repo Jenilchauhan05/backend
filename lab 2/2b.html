@@ -1,0 +1,23 @@
+<!-- let and var -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cricketer () {
+            var a = "dhoni";
+            {
+                let b = "sachin"; 
+                console.log("inside block :" +b);
+            }
+            console.log("inside function :" +a);
+            console.log("inside function, outside block :" +b);
+        }
+        cricketer();
+    </script>
+</body>
+</html>

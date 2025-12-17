@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("enter the number");
+        let num = original = n;
+        let count, sum = 0;
+
+        while (n != 0) {
+            n = Math.floor(n / 10);
+            count++;
+        }
+
+        for (i = 0 ; i < count; i++) {
+            rem = num % 10;
+            sum = Math.pow(rem, count) + sum;
+        }
+
+        if (sum == original) {
+            document.writeln("n is armstrong");
+        }
+        else {
+            document.writeln("n is not armstrong");
+        }
+    </script>
+</body>
+</html>
